@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkyWay Travel Agency</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="logo">SkyWay</div>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/destinations">Destinations</a>
+        <a href="/contact">Contact</a>
+    </nav>
+</header>
+
+<main class="content">
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>&copy; 2026 SkyWay Travel Agency. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
